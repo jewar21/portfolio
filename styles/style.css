@@ -105,6 +105,11 @@ h3 {
   width: 46px;
   height: 46px;
   padding: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  flex-shrink: 0;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 14px;
   background: rgba(255, 255, 255, 0.04);
@@ -115,7 +120,7 @@ h3 {
   display: block;
   width: 18px;
   height: 2px;
-  margin: 4px auto;
+  margin: 0;
   border-radius: 999px;
   background: var(--text);
   transition: transform 0.25s ease, opacity 0.25s ease;
