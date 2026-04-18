@@ -205,9 +205,14 @@ section {
 }
 
 .hero-header {
-  display: grid;
-  gap: 0.35rem 1.25rem;
+  display: flex;
   align-items: center;
+  gap: 1.25rem;
+}
+
+.hero-header > div {
+  flex: 1;
+  min-width: 0;
 }
 
 .hero-kicker {
@@ -474,12 +479,7 @@ textarea:focus-visible {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .hero-header {
-    grid-template-columns: auto 1fr;
-  }
-
   .hero-image {
-    grid-row: span 3;
     justify-content: flex-start;
   }
 
@@ -579,6 +579,10 @@ textarea:focus-visible {
   .nav-links a {
     width: 100%;
     justify-content: flex-start;
+  }
+
+  .hero-header {
+    gap: 1rem;
   }
 
   .hero-image img {
