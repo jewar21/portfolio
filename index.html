@@ -1,233 +1,281 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description"
-        content="Portafolio y hoja de vida de J. Eduardo, desarrollador magister en Ciencia de Datos">
+    <meta name="description"
+        content="Portafolio y hoja de vida de J. Eduardo, desarrollador y magister en Ciencia de Datos.">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Portafolio | J.Eduardo</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div>
+    <header class="site-header">
+        <nav class="site-nav">
+            <div class="brand">
                 <a href="#hero">JEduardo.dev</a>
             </div>
-            <ul>
-                <li><a href="#about">Sobre mí</a></li>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre m&iacute;</a></li>
                 <li><a href="#skills">Habilidades</a></li>
                 <li><a href="#experience">Experiencia</a></li>
                 <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#education">Educación</a></li>
+                <li><a href="#education">Educaci&oacute;n</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <section id="hero">
-            <div>
-                <p>Hola, soy</p>
-                <h1>J.Eduardo</h1>
-                <h2>Frontend Developer / Full Stack Developer / Software Engineer / Mgs. Data Cience</h2>
-                <p>
-                    Desarrollo Webs modernas, funcionales y centradas en el usuario. Me especializo en crear productos
-                    escalables con tecnologías como HTML, CSS, JavaScript, React y Node.js...
-                </p>
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <p class="hero-kicker">Hola, soy</p>
+                    <h1>J.Eduardo</h1>
+                    <h2>Frontend Developer / Full Stack Developer / Software Engineer / Mag&iacute;ster en Ciencia de
+                        Datos</h2>
+                    <p class="hero-description">
+                        Desarrollo webs modernas, funcionales y centradas en el usuario. Me especializo en crear
+                        productos escalables con tecnolog&iacute;as como HTML, CSS, JavaScript, React y Node.js.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#projects">Ver proyectos</a>
+                        <a class="button button-secondary" href="#contact">Contactarme</a>
+                    </div>
+                </div>
             </div>
         </section>
+
         <section id="about">
-            <header>
-                <h2>Sobre mí</h2>
-            </header>
-            <article>
-                <p>
-                    Soy desarrollador con experiencia en construcción de interfaces interactivas, accesibles y de alto
-                    rendimiento. Me enfoco en productos digitales útiles, combinando lógica, diseño y buenas prácticas
-                    de
-                    desarrollo.
-                </p>
-                <p>
-                    He trabajo para empresas del sector innovador, en proyectos webs, dashboards, e-commerce,
-                    aplicaciones
-                    empresariales y productos digitales, colaborando con equipos multidisciplinarios.
-                    Actualmento soy docente de la UFPSO.
-                </p>
-            </article>
+            <div class="container">
+                <header class="section-header">
+                    <h2>Sobre m&iacute;</h2>
+                </header>
+
+                <article class="about-card">
+                    <div class="about-copy">
+                        <p>
+                            Soy desarrollador con experiencia en construcci&oacute;n de interfaces interactivas,
+                            accesibles y de alto rendimiento. Me enfoco en productos digitales &uacute;tiles,
+                            combinando l&oacute;gica, dise&ntilde;o y buenas pr&aacute;cticas de desarrollo.
+                        </p>
+                        <p>
+                            He trabajado para empresas del sector innovador, en proyectos web, dashboards,
+                            e-commerce, aplicaciones empresariales y productos digitales, colaborando con equipos
+                            multidisciplinarios. Actualmente soy docente de la UFPSO.
+                        </p>
+                    </div>
+                    <figure class="about-image">
+                        <img src="./assets/me.png" alt="Retrato de J. Eduardo">
+                    </figure>
+                </article>
+            </div>
         </section>
+
         <section id="skills">
-            <header>
-                <h2>Habilidades</h2>
-            </header>
-            <div>
-                <article>
-                    <h3>Frontend</h3>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>Javascript</li>
-                        <li>React / Vue / Angular/ Next</li>
-                    </ul>
-                </article>
-                <article>
-                    <h3>Backend</h3>
-                    <ul>
-                        <li>Node.js</li>
-                        <li>Python</li>
-                        <li>Goland</li>
-                    </ul>
-                </article>
-                <article>
-                    <h3>Bases de datos</h3>
-                    <ul>
-                        <li>MySQL</li>
-                        <li>PostgreSQL</li>
-                        <li>MongoDB</li>
-                        <li>Firebase</li>
-                    </ul>
-                </article>
-                <article>
-                    <h3>Herramientas</h3>
-                    <ul>
-                        <li>Git / GitHub</li>
-                        <li>Figma</li>
-                    </ul>
-                </article>
+            <div class="container">
+                <header class="section-header">
+                    <h2>Habilidades</h2>
+                </header>
+
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>React / Vue / Angular / Next</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Backend</h3>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Python</li>
+                            <li>Golang</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Bases de datos</h3>
+                        <ul>
+                            <li>MySQL</li>
+                            <li>PostgreSQL</li>
+                            <li>MongoDB</li>
+                            <li>Firebase</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Herramientas</h3>
+                        <ul>
+                            <li>Git / GitHub</li>
+                            <li>Figma</li>
+                        </ul>
+                    </article>
+                </div>
             </div>
         </section>
+
         <section id="experience">
-            <header>
-                <h2>Experiencia</h2>
-            </header>
-            <article>
-                <h3>Frontend Developer - UFPSO</h3>
-                <p><strong>2020 - Actualidad</strong></p>
-                <p>
-                    Desarrollo de interfaces responsivas, optimización de rendimiento y colabocación con equipos de
-                    diseño y
-                    backend para lanzar nuevas funcionalidades.
-                </p>
-            </article>
-            <article>
-                <h3>Desarrollador Web Freelance</h3>
-                <p><strong>2020 - Actualidad</strong></p>
-                <p>
-                    Creación de sitios web corporativos, landing pages y tiendas online para clientes de distintos
-                    sectores,
-                    mejorando su experiencia digital hacia la inteligencia de negocio.
-                </p>
-            </article>
-        </section>
-        <section id="projects">
-            <header>
-                <h2>Proyectos destacados</h2>
-            </header>
+            <div class="container">
+                <header class="section-header">
+                    <h2>Experiencia</h2>
+                </header>
 
-            <div>
-                <article>
-                    <img src="./assets/analytics_dashboard.png" alt="Captura del proyecto 1" />
-                    <h3>Dashboard de Analítica</h3>
-                    <p>
-                        Aplicación para visualización de métricas en tiempo real con autenticación,
-                        gráficos y panel administrativo.
-                    </p>
-                    <p><strong>Tecnologías:</strong> React, Node.js, MongoDB</p>
-                    <div>
-                        <a href="#">Demo</a>
-                        <a href="#">GitHub</a>
-                    </div>
-                </article>
+                <div class="experience-grid">
+                    <article class="info-card">
+                        <h3>Frontend Developer - UFPSO</h3>
+                        <p class="info-date"><strong>2020 - Actualidad</strong></p>
+                        <p>
+                            Desarrollo de interfaces responsivas, optimizaci&oacute;n de rendimiento y
+                            colaboraci&oacute;n
+                            con equipos de dise&ntilde;o y backend para lanzar nuevas funcionalidades.
+                        </p>
+                    </article>
 
-                <article>
-                    <img src="./assets/ecommerce.png" alt="Captura del proyecto 2" />
-                    <h3>E-commerce</h3>
-                    <p>
-                        Tienda virtual con catálogo, carrito de compras, pasarela de pago e interfaz
-                        optimizada para móvil.
-                    </p>
-                    <p><strong>Tecnologías:</strong> Next.js, Stripe, PostgreSQL</p>
-                    <div>
-                        <a href="#">Demo</a>
-                        <a href="#">GitHub</a>
-                    </div>
-                </article>
-
-                <article>
-                    <img src="./assets/landing.png" alt="Captura del proyecto 3" />
-                    <h3>Landing para SaaS</h3>
-                    <p>
-                        Diseño y desarrollo de una landing orientada a conversión con enfoque en UX,
-                        performance y SEO.
-                    </p>
-                    <p><strong>Tecnologías:</strong> HTML, CSS, JavaScript</p>
-                    <div>
-                        <a href="#">Demo</a>
-                        <a href="#">GitHub</a>
-                    </div>
-                </article>
+                    <article class="info-card">
+                        <h3>Desarrollador Web Freelance</h3>
+                        <p class="info-date"><strong>2020 - Actualidad</strong></p>
+                        <p>
+                            Creaci&oacute;n de sitios web corporativos, landing pages y tiendas online para clientes
+                            de distintos sectores, mejorando su experiencia digital hacia la inteligencia de negocio.
+                        </p>
+                    </article>
+                </div>
             </div>
         </section>
-        <section id="education">
-            <header>
-                <h2>Educación y certificaciones</h2>
-            </header>
 
-            <article>
-                <h3>Ingeniería de Sistemas</h3>
-                <p>Universidad UFPSO - 2013 - 2020</p>
-            </article>
+        <section id="projects">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Proyectos destacados</h2>
+                </header>
 
-            <article>
-                <h3>Máster en Ciencia de Datos aplicada a la Inteligencia de Negocios</h3>
-                <p>Universidad Europea del Atlántico (UNEATLANTICO) - 2026</p>
-            </article>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <img src="./assets/analytics_dashboard.png" alt="Captura del proyecto dashboard de analitica">
+                        <div class="project-body">
+                            <h3>Dashboard de Anal&iacute;tica</h3>
+                            <p>
+                                Aplicaci&oacute;n para visualizaci&oacute;n de m&eacute;tricas en tiempo real con
+                                autenticaci&oacute;n, gr&aacute;ficos y panel administrativo.
+                            </p>
+                            <p><strong>Tecnolog&iacute;as:</strong> React, Node.js, MongoDB</p>
+                            <div class="project-links">
+                                <a href="#">Demo</a>
+                                <a href="#">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
 
-            <article>
-                <h3>Maestría en Ciencia de Datos aplicada a la Inteligencia de Negocios</h3>
-                <p>Universidad Internacional Iberoamericana - UNINI México (UNINI-MX) - 2026</p>
-            </article>
+                    <article class="project-card">
+                        <img src="./assets/ecommerce.png" alt="Captura del proyecto ecommerce">
+                        <div class="project-body">
+                            <h3>E-commerce</h3>
+                            <p>
+                                Tienda virtual con cat&aacute;logo, carrito de compras, pasarela de pago e interfaz
+                                optimizada para m&oacute;vil.
+                            </p>
+                            <p><strong>Tecnolog&iacute;as:</strong> Next.js, Stripe, PostgreSQL</p>
+                            <div class="project-links">
+                                <a href="#">Demo</a>
+                                <a href="#">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <img src="./assets/landing.png" alt="Captura del proyecto landing para saas">
+                        <div class="project-body">
+                            <h3>Landing para SaaS</h3>
+                            <p>
+                                Dise&ntilde;o y desarrollo de una landing orientada a conversi&oacute;n con enfoque en
+                                UX, performance y SEO.
+                            </p>
+                            <p><strong>Tecnolog&iacute;as:</strong> HTML, CSS, JavaScript</p>
+                            <div class="project-links">
+                                <a href="#">Demo</a>
+                                <a href="#">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
+
+        <section id="education">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Educaci&oacute;n y certificaciones</h2>
+                </header>
+
+                <div class="education-grid">
+                    <article class="info-card">
+                        <h3>Ingenier&iacute;a de Sistemas</h3>
+                        <p>Universidad UFPSO - 2013 - 2020</p>
+                    </article>
+
+                    <article class="info-card">
+                        <h3>M&aacute;ster en Ciencia de Datos aplicada a la Inteligencia de Negocios</h3>
+                        <p>Universidad Europea del Atl&aacute;ntico (UNEATLANTICO) - 2026</p>
+                    </article>
+
+                    <article class="info-card">
+                        <h3>Maestr&iacute;a en Ciencia de Datos aplicada a la Inteligencia de Negocios</h3>
+                        <p>Universidad Internacional Iberoamericana - UNINI M&eacute;xico - 2026</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <section id="contact">
-            <header>
-                <h2>Contacto</h2>
-            </header>
+            <div class="container">
+                <header class="section-header">
+                    <h2>Contacto</h2>
+                </header>
 
-            <p>
-                ¿Tienes una vacante, proyecto o colaboración en mente? Conversemos.
-            </p>
+                <p class="contact-intro">
+                    &iquest;Tienes una vacante, proyecto o colaboraci&oacute;n en mente? Conversemos.
+                </p>
 
-            <ul>
-                <li><a href="mailto:designocana@email.com">designocana@gmail.com</a></li>
-                <li><a href="https://github.com/jewar21" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                <li><a href="www.linkedin.com/in/jeduardo-guerrod" target="_blank"
-                        rel="noopener noreferrer">LinkedIn</a>
-                </li>
-                <li><a href="https://www.instagram.com/wolfyissus/" target="_blank"
-                        rel="noopener noreferrer">Instagram</a></li>
-            </ul>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <ul class="contact-list">
+                            <li><a href="mailto:designocana@gmail.com">designocana@gmail.com</a></li>
+                            <li><a href="https://github.com/jewar21" target="_blank"
+                                    rel="noopener noreferrer">GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/jeduardo-guerrod" target="_blank"
+                                    rel="noopener noreferrer">LinkedIn</a></li>
+                            <li><a href="https://www.instagram.com/wolfyissus/" target="_blank"
+                                    rel="noopener noreferrer">Instagram</a></li>
+                        </ul>
+                    </div>
 
-            <form action="#" method="post">
-                <div>
-                    <label for="name">Nombre</label>
-                    <input type="text" id="name" name="name" required />
+                    <form class="contact-form" action="#" method="post">
+                        <div>
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div>
+                            <label for="email">Correo</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div>
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit">Enviar mensaje</button>
+                    </form>
                 </div>
-
-                <div>
-                    <label for="email">Correo</label>
-                    <input type="email" id="email" name="email" required />
-                </div>
-
-                <div>
-                    <label for="message">Mensaje</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-
-                <button type="submit">Enviar mensaje</button>
-            </form>
+            </div>
         </section>
     </main>
-    <footer>
+
+    <footer class="site-footer">
         <p>&copy; 2026 J.Eduardo. Todos los derechos reservados.</p>
     </footer>
 </body>
